@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freelancer Orders</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f0f2f5; }
+    h2 { color: #333; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+    th, td { padding: 12px; border: 1px solid #ccc; text-align: left; }
+    th { background: #28a745; color: #fff; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    button { padding: 5px 10px; margin: 2px; border-radius: 5px; border: none; cursor: pointer; }
+    .accept { background: #28a745; color: #fff; }
+    .reject { background: #dc3545; color: #fff; }
+    a { margin-right: 10px; color: #007BFF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h2>Orders Received as Freelancer</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Client</th>
+        <th>Job</th>
+        <th>Status</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody id="freelancer-orders-list">
+      <tr><td colspan="4">Loading...</td></tr>
+    </tbody>
+  </table>
+
+  <a href="order.html">Place Order</a> | 
+  <a href="my-orders.html">My Orders</a>
+
+  <script src="orders.js"></script>
+</body>
+</html>
